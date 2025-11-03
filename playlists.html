@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <header>
+        <div class="logo">♪ MelodyWave</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="playlists.html">Playlists</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Playlists</h2>
+
+        <div class="playlists">
+            <img src="" alt="Chill vibes">
+            <h3>Chill vibes</h3>
+            <ul>
+                <li>"Seven Nation Army" - The White Stipes</li>
+                <li>"Kalopsia" - Queens of the Stone Age</li>
+                <li>"The Mess We're In" - PJ Harvey</li>
+            </ul>
+            <button onclick="playSong('Kalopsia','Queens of the Stone Age')">Play</button>
+        </div>
+
+        <div class="playlist">
+            <img src="" alt="Workout Mix">
+            <h3>Workout Mix</h3>
+            <ul>
+                <li>"Enter Sendman" - Metallica</li>
+                <li>"Bobby James' - N.E.R.D</li>
+                <li>"Lithium" - Evanescence</li>
+            </ul>
+            <button onclick="playSong('Bobby James','N.E.R.D')">Play</button>
+        </div>
+    </main>
+
+    <footer>2025 MelodyWave | All rights reserved.</footer>
+
+<div class="player-bar" id="playerBar">
+    <p id="nowPlaying">No song playing</p>
+    <button id="PlayPause" onclick="togglePLay()">a</button>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
