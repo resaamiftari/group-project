@@ -1,83 +1,48 @@
-<!DOCTYPE html>
+||<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
+
 <body>
 
     <header>
-        <div class="container-nav">
-            <div class="logo">StaticVinyls</div>
-        </div>
+        <div class="logo">♪ MelodyWave</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="playlists.html">Playlists</a>
+        </nav>
     </header>
 
-    <input type="text" placeholder="Search...">
-    <button class="btn">Search</button>
-
     <main>
-        <section class="genres-section">
-            <h1>Genres of Music</h1>
-            <div class="gallery">
+        <h2>Find Your Next Favorite Song</h2>
+        <div class="search-bar">
+            <input type="text" id="searchinput" placeholder="Search by song or artist...">
+            <button onclick="searchsongs()">Search</button>
 
-                <div class="group-project">
-                    <img src="img/hiphop.jpg">
-                    <a href="https://en.wikipedia.org/wiki/Hip-hop" target="_blank">
-                    <h3>HipHop</h3></a>
-                </div>
-                
-                <div class="group-project">
-                    <img src="img/rb.jpg">
-                    <a href="https://en.wikipedia.org/wiki/Rhythm_and_blues" target="_blank"><h3>R&B</h3></a>
-                </div>
-
-                <div class="group-project">
-                    <img src="img/rap.jpg" height="29%" width="29%">
-                    <a href="https://en.wikipedia.org/wiki/Rapping" target="_blank"><h3>Rap</h3></a>
-                    
-
-                </div>
-                <div class="group-project">
-                    <img src="img/jazz.jpg">
-                    <a href="https://en.wikipedia.org/wiki/Jazz"><h3>Jazz</h3></a>
-                    
-            </div>
-            <div class="group-project">
-                    <img src="img/glamrock.jpg">
-                    <a href="https://en.wikipedia.org/wiki/Glam_rock"><h3>Glam Rock</h3></a>
-                    
-            </div>
-             <div class="group-project">
-                    <img src="img/rock.jpg">
-                    <a href="https://en.wikipedia.org/wiki/Rock_music"><h3>Rock</h3></a>
-                    
-             </div>
-                    
-
-        </section>
-
-        
-
-    </main>
-
-
-
-
-    
-    
-
-    <footer>
-        <div class="footer-content">
-           <ul>
-             <li><a href="index.html">Home</a></li>
-             <li><a href="search.html">Search</a></li>
-             <li><a href="#Library">Library</a></li>
-           </ul>
         </div>
 
-    </footer>
+        <div id="results" class="songs"></div>
+    </main>
+
+    
+    
 </body>
+
+<footer>2025 MelodyWave | All rights reserved.</footer>
+
+<div class="player-bar" id="playerBar">
+    <p id="nowPlaying">No song playing</p>
+    <button id="PlayPause" onclick="togglePLay()">a</button>
+</div>
+
+<script src="js/main.js"></script>
+
 </html>

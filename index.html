@@ -7,29 +7,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <header>
-        <div class="container-nav">
-            <div class="logo">StaticVinyls</div>
-        </div>
+        <div class="logo">♪ MelodyWave</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="playlists.html">Playlists</a>
+        </nav>
     </header>
 
     <main>
-        <section></section>
+        <section class="hero">
+            <h2>Welcome to MelodyWave</h2>
+            <p>Your world of sound, relangined.</p>
+            <button class="btn">Start Listening</button>
+        </section>
 
+        <section class="featured">
+            <h2>Featured Tracks</h2>
+            <div class="songs">
+                <div class="song-card">
+                    <img src="" alt="album cover">
+                    <p>"November Rain" - Guns N Roses</p>
+                    <button onclick="playSong('November Rain','Guns N Roses')"></button>
+                </div>
+                <div class="song-card">
+                    <img src="" alt="album cover">
+                    <p>"Milk of the Madonna" - Deftones</p>
+                    <button onclick="playSong('Milk of the Madonna','Deftones')"></button>
+                </div>
+                <div class="song-card">
+                    <img src="" alt="album cover">
+                    <p>"Mori Hana" - Marigona</p>
+                    <button onclick="playSong('Mpri Hana','Marigona')"></button>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>2025 MelodyWave | All rights reserved.</footer>
 
-    <footer>
-        <div class="footer-content">
-           <ul>
-             <li><a href="index.html">Home</a></li>
-             <li><a href="search.html">Search</a></li>
-             <li><a href="#Library">Library</a></li>
-           </ul>
-        </div>
+<div class="player-bar" id="playerBar">
+    <p id="nowPlaying">No song playing</p>
+    <button id="PlayPause" onclick="togglePLay()">a</button>
+</div>
 
-    </footer>
-    
- 
+<script src="js/main.js"></script>
+
 </body>
 </html>
