@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">♪ MelodyWave</div>
@@ -21,38 +23,48 @@
         <section class="hero">-
             <h2>Welcome to MelodyWave</h2>
             <p>Your world of sound, relangined.</p>
-            <button class="btn">Start Listening</button>
+            <a href="search.html"> <button class="btn">Start Listening</button></a>
+           
         </section>
 
         <section class="featured">
             <h2>Featured Tracks</h2>
             <div class="songs">
                 <div class="song-card">
-                    <img src="" alt="album cover">
+                    <img src="novemberrain.jpg" alt="album cover">
                     <p>"November Rain" - Guns N Roses</p>
-                    <button onclick="playSong('November Rain','Guns N Roses')"></button>
+                    <a href="https://www.youtube.com/watch?v=8x23ajWSHyo&list=RD8x23ajWSHyo&start_radio=1"><button
+                            onclick="playSong('November Rain','Guns N Roses')"></button>
+                    </a>
+
                 </div>
                 <div class="song-card">
-                    <img src="" alt="album cover">
+                    <img src="milkof.jpg" alt="album cover">
                     <p>"Milk of the Madonna" - Deftones</p>
-                    <button onclick="playSong('Milk of the Madonna','Deftones')"></button>
+                    <a href="https://www.youtube.com/watch?v=D1zErtM1r2c&list=RDD1zErtM1r2c&start_radio=1"><button
+                            onclick="playSong('Milk of the Madonna','Deftones')"></button></a>
+
                 </div>
                 <div class="song-card">
-                    <img src="" alt="album cover">
-                    <p>"Mori Hana" - Marigona</p>
-                    <button onclick="playSong('Mpri Hana','Marigona')"></button>
+                    <img src="adele.jpg" alt="album cover">
+                    <p>"Hometown glory" - Adele</p>
+                    <a href="https://www.youtube.com/watch?v=BW9Fzwuf43c&list=RDBW9Fzwuf43c&start_radio=1"> <button
+                            onclick="playSong('Hometown glory','Adele')"></button></a>
+
+
                 </div>
             </div>
         </section>
     </main>
     <footer>2025 MelodyWave | All rights reserved.</footer>
 
-<div class="player-bar" id="playerBar">
-    <p id="nowPlaying">No song playing</p>
-    <button id="PlayPause" onclick="togglePLay()">a</button>
-</div>
+    <div class="player-bar" id="playerBar">
+        <p id="nowPlaying">No song playing</p>
+        <button id="PlayPause" onclick="togglePLay()">a</button>
+    </div>
 
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>

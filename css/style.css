@@ -28,7 +28,11 @@
         transition: color 0.3s;
     }
 
-    nav a:hover, nav a.active{
+    nav a:hover{
+        color: green;
+    }
+
+    nav a.active{
         color: green;
     }
 
@@ -54,7 +58,7 @@
         background-color: green;
     }
 
-    .featured , .polaylists{
+    .featured , .playlists{
         text-align: center;
         padding: 2rem;
     }
@@ -102,7 +106,7 @@
     /* Playlists */
 
     .playlist{
-        background: black;
+        background: rgb(36, 35, 35);
         border-radius: 20px;
         margin: 2rem auto;
         padding: 2rem;
@@ -117,7 +121,7 @@
     }
 
     .playlist button{
-        background: green;
+        background: rgb(14, 82, 14);
         border: none;
         padding: 10px 20px;
         border-radius: 20px;
